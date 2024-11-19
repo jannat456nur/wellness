@@ -5,15 +5,14 @@ import React from 'react';
 import halfstar from '../../assets/halfstar.png';
 import hero from '../../assets/herosection.png';
 import heroicon from '../../assets/heroicon.png';
-import { clsx } from 'clsx';
 
 const page = () => {
     return (
-        <div className="bg-[#F0F1EE]">
-            <div className=" max-w-[1100px] mx-auto h-[760px] flex justify-between items-center">
+        <div className="bg-[#F0F1EE] ">
+            <div className="sm:mt-8 sm:gap-4 max-w-[1100px] mx-auto h-auto lg:h-[760px] flex flex-col lg:flex-row justify-between items-center">
                 {/* Left Section */}
-                <div className="left space-y-8 gap-4">
-                    <div className="flex items-center gap-2">
+                <div className="left space-y-4 md:space-y-6 lg:space-y-8 text-center lg:text-left px-4 lg:px-0">
+                    <div className="flex justify-center lg:justify-start items-center gap-2">
                         {/* Full Stars */}
                         {[...Array(4)].map((_, index) => (
                             <svg
@@ -21,7 +20,7 @@ const page = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 24 24"
                                 fill="currentColor"
-                                className="h-8 w-8 text-orange-400"
+                                className="h-6 w-6 md:h-8 md:w-8 text-orange-400"
                             >
                                 <path
                                     fillRule="evenodd"
@@ -31,51 +30,64 @@ const page = () => {
                             </svg>
                         ))}
                         {/* Half Star */}
-                        <Image src={halfstar} alt="half star" className="mt-0 w-7 h-7 object-cover" />
-                        <span className='text-lg'>  4.9 (566)</span>
+                        <Image src={halfstar} alt="half star" className="w-5 h-5 md:w-7 md:h-7 object-cover" />
+                        <span className="text-base md:text-lg">4.9 (566)</span>
                     </div>
-                    <h1 className="text-5xl font-bold space-y-2 ">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold space-y-2">
                         #1 Platform<br /> Powering Health <br /> and Wellness
                     </h1>
-                    <h1 className="text-2xl font-semibold">
-                        We’re restoring home as the primary <br />place of personal well-being
+                    <h1 className="text-lg md:text-xl lg:text-2xl font-semibold">
+                        We’re restoring home as the primary <br /> place of personal well-being
                     </h1>
-                    <p className='text-lg space-x-3'>Health is not just about what you're eating. It's also<br /> about what you're thinking and saying</p>
-                    <div>
-                        <button className="bg-[#287279] text-white px-6 py-3 rounded-full">Browse More</button>
-                        <button className="bg-transparent text-[#287279] px-6 py-3 rounded-full border border-[#287279] ml-4">Get Started</button>
+                    <p className="text-sm md:text-base lg:text-lg">
+                        Health is not just about what you're eating. It's also<br />
+                        about what you're thinking and saying
+                    </p>
+                    <div className="flex justify-center lg:justify-start space-x-4">
+                        <button className="bg-[#287279] text-white px-4 py-2 md:px-6 md:py-3 rounded-full">
+                            Browse More
+                        </button>
+                        <button className="bg-transparent text-[#287279] px-4 py-2 md:px-6 md:py-3 rounded-full border border-[#287279]">
+                            Get Started
+                        </button>
                     </div>
                 </div>
 
                 {/* Right Section with Background Image */}
                 <div
-                    className="right w-[648px] h-[760px] bg-cover bg-center flex justify-end items-end"
+                    className="right w-full lg:w-[648px] h-[400px] lg:h-[760px] bg-cover bg-center mt-8 lg:mt-0 flex justify-end items-end"
                     style={{
                         backgroundImage: `url(${hero.src})`,
                     }}
                 >
-                    <div className="w-full h-[280px] relative">
+                    <div className="w-full h-auto lg:h-[280px] relative px-4 lg:px-0">
                         {/* First Div with Glass-like Background Blur */}
-                        <div className="bg-slate-200 bg-opacity-30 backdrop-blur-lg py-10 px-8 z-10 flex justify-around items-center rounded-lg m-2">
-                            <h1 className="text-6xl font-bold">12,000+</h1>
+                        <div className="bg-slate-200 bg-opacity-30 backdrop-blur-lg py-6 px-6 lg:py-10 lg:px-8 z-10 flex flex-col lg:flex-row justify-around items-center rounded-lg">
+                            <h1 className="text-4xl lg:text-6xl font-bold">12,000+</h1>
                             {/* Vertical Divider */}
-                            <div className="border-l border-black h-8 mx-2" />
-                            <p className="text-lg">Happy learners rely on<br />us regularly</p>
+                            <div className="hidden lg:block border-l border-black h-8 mx-2" />
+                            <p className="text-sm md:text-base lg:text-lg text-center lg:text-left">
+                                Happy learners rely on<br /> us regularly
+                            </p>
                         </div>
 
                         {/* Second Div with Blur effect */}
-                        <div className="absolute left-0 right-0 mb-2 mx-2 -mt-4 z-20 py-10 px-8 bg-white rounded-lg shadow-lg flex justify-between items-center">
-                            <p className="text-lg font-medium">Find your wellbeing</p>
-                            <p>
+                        <div className="absolute left-0 right-0 mb-2 mx-2 -mt-4 z-20 py-6 px-6 lg:py-10 lg:px-8 bg-white rounded-lg shadow-lg flex flex-col lg:flex-row justify-between items-center">
+                            <p className="text-sm md:text-base lg:text-lg font-medium">
+                                Find your wellbeing
+                            </p>
+                            <p className="text-xs md:text-sm lg:text-base text-center lg:text-left">
                                 By prioritizing self-care and making informed choices,<br />
                                 one can enhance their overall quality of life
                             </p>
                         </div>
-                        <Image src={heroicon} className='h-24 w-24 absolute -top-80 -left-8'/>
+                        <Image
+                            src={heroicon}
+                            className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 absolute -top-8 sm:-top-80 md:-top-16 lg:-top-80 sm:top-30 -left-4 lg:-left-8"
+                            alt="Hero Icon"
+                        />
                     </div>
-
                 </div>
-
             </div>
         </div>
     );

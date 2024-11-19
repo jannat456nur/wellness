@@ -134,7 +134,7 @@ const page = () => {
         }
     }
     return (
-        <div className="px-4 py-6  max-w-[1100px] mx-auto">
+        <div className="px-4 py-6 max-w-[1100px] mx-auto mt-4 sm:mt-20">
             <div className="flex items-center justify-between mb-6">
                 <div className="max-w-2xl">
                     <h2 className="text-2xl font-bold mb-2">Our popular courses</h2>
