@@ -160,7 +160,7 @@ const Page = () => {
                 className="flex overflow-x-hidden scroll-smooth"
                 aria-live="polite"
             >
-                {courses.map((course, index) => (
+                {courses.map((course) => (
                     <Card key={course.id} className="flex-shrink-0 w-full md:w-1/2 lg:w-1/4 p-4 mr-6">
                         <div className="relative">
                             <Image
@@ -183,8 +183,8 @@ const Page = () => {
                         </div>
                         <div className="mt-4">
                             <div className="flex gap-2 mb-2">
-                                <Badge variant="secondary border" className='border-[#ffdfb1] bg-[#fff5e6]' >{course.level}</Badge>
-                                <Badge variant="secondary border" className='border-[#e4f191] bg-[#f5fad6]'>{course.category}</Badge>
+                                <Badge className='border-[#ffdfb1] bg-[#fff5e6]' >{course.level}</Badge>
+                                <Badge  className='border-[#e4f191] bg-[#f5fad6]'>{course.category}</Badge>
                             </div>
                             <h3 className={`font-semibold mb-2 line-clamp-2 ${course.id === 2 ? 'underline' : ''}`}>{course.title}</h3>
                             <div className="flex items-center gap-1 mb-4">
