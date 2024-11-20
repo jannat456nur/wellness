@@ -14,31 +14,31 @@
 */
 const navigation = {
   Categories: [
-        { name: 'Nutrition and diet', href: '#' },
-        { name: 'Fitness training', href: '#' },
-        { name: 'Mindfulness', href: '#' },
-        { name: 'Mental health', href: '#' },
-        { name: 'Personal growth', href: '#' },
-        { name: 'Social well-being', href: '#' },
-      
+    { name: 'Nutrition and diet', href: '#' },
+    { name: 'Fitness training', href: '#' },
+    { name: 'Mindfulness', href: '#' },
+    { name: 'Mental health', href: '#' },
+    { name: 'Personal growth', href: '#' },
+    { name: 'Social well-being', href: '#' },
+
   ],
   About: [
-      { name: 'About us', href: '#' },
-      { name: 'Our partners', href: '#' },
-      { name: 'Investors', href: '#' },
-      { name: 'Career', href: '#' },
+    { name: 'About us', href: '#' },
+    { name: 'Our partners', href: '#' },
+    { name: 'Investors', href: '#' },
+    { name: 'Career', href: '#' },
   ],
   Resources: [
-      { name: 'FAQ', href: '#' },
-      { name: 'Refund policies', href: '#' },
-      { name: 'Terms and conditions', href: '#' },
-      { name: 'Cookie', href: '#' },
-      { name: 'Latest posts', href: '#' },
+    { name: 'FAQ', href: '#' },
+    { name: 'Refund policies', href: '#' },
+    { name: 'Terms and conditions', href: '#' },
+    { name: 'Cookie', href: '#' },
+    { name: 'Latest posts', href: '#' },
   ],
   Support: [
-      { name: 'Get in touch', href: '#' },
-      { name: 'Visit our forum', href: '#' },
-  
+    { name: 'Get in touch', href: '#' },
+    { name: 'Visit our forum', href: '#' },
+
   ],
   social: [
     {
@@ -68,134 +68,118 @@ const navigation = {
       ),
     },
     {
-      name: 'Twitter',
-      href: '#',
-      icon: (props) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-        </svg>
-      ),
-    },
-    {
-      name: 'GitHub',
+      name: 'X',
       href: '#',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
-            d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+            d="M6.293 6.293a1 1 0 011.414 0L12 9.586l4.293-4.293a1 1 0 111.414 1.414L13.414 11l4.293 4.293a1 1 0 11-1.414 1.414L12 12.414l-4.293 4.293a1 1 0 11-1.414-1.414L10.586 11 6.293 6.293a1 1 0 010-1.414z"
             clipRule="evenodd"
           />
         </svg>
       ),
     },
+
     {
-      name: 'YouTube',
+      name: 'Discord',
       href: '#',
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
             fillRule="evenodd"
-            d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
+            d="M12 2C6.477 2 2 6.477 2 12c0 3.158 1.875 5.91 4.495 7.335C6.931 19.84 7.506 19.77 8.002 19.49c.252-.143.512-.29.76-.44C9.271 18.914 10.483 18 12 18c1.517 0 2.729.914 3.238 1.51.248.15.508.297.76.44.496.28.071.35.506.845C20.125 17.91 22 15.158 22 12c0-5.523-4.477-10-10-10zM6.1 6.558c.702-.336 1.392-.598 2.088-.765.53-.043 1.064-.075 1.59-.107.707-.05 1.401-.116 2.095-.162.695-.046 1.394-.078 2.097-.118 1.117-.06 2.275-.11 3.426-.176 1.243.065 2.46.136 3.674.205.769.063 1.532.137 2.294.21 1.57-.003 3.152-.008 4.73.125.222-.182.44-.37.67-.552a7.086 7.086 0 01-3.83-.034c-.85-.358-1.527-.726-2.195-1.102-.446-.266-.912-.548-1.398-.809-.333.003-.663.011-.994.015-.333-.004-.667-.014-1-.021-.332.006-.664.018-.995.027-.46.012-.916.03-1.372.05-.98.005-1.97-.042-2.939-.058-.98-.012-1.94.01-2.919.124-.125-.005-.246-.018-.373-.027-.467-.08-.934-.165-1.399-.248-.149-.005-.298-.016-.45-.027-.367-.071-.735-.14-1.103-.213-.324-.073-.653-.154-.975-.23-.078-.006-.158-.013-.237-.019-.264.07-.527.14-.791.211-.401-.076-.805-.155-1.207-.236-.006-.243.03-.486.027-.73z"
             clipRule="evenodd"
           />
         </svg>
       ),
-    },
+    }
+
+   
   ],
 }
 
 export default function Example() {
   return (
-      <footer className="bg-white max-w-[1100px] mx-auto" aria-labelledby="footer-heading">
-          
-          <div className="mx-auto max-w-7xl px-6 pb-8 pt-20 sm:pt-24 lg:px-8 lg:pt-32">
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                  {/* Categories Column */}
-                  <div>
-                      <h3 className="text-sm  text-gray-400">Categories</h3>
-                      <ul className="mt-6 space-y-4">
-                          {navigation.Categories.map((item) => (
-                              <li key={item.name}>
-                                  <a href={item.href} className="text-sm text-gray-600 hover:text-gray-900">
-                                      {item.name}
-                                  </a>
-                              </li>
-                          ))}
-                      </ul>
-                  </div>
+    <footer className="bg-white max-w-[1100px] mx-auto" aria-labelledby="footer-heading">
 
-                  {/* About Column */}
-                  <div>
-                      <h3 className="text-sm  text-gray-400">About</h3>
-                      <ul className="mt-6 space-y-4">
-                          {navigation.About.map((item) => (
-                              <li key={item.name}>
-                                  <a href={item.href} className="text-sm text-gray-600 hover:text-gray-900">
-                                      {item.name}
-                                  </a>
-                              </li>
-                          ))}
-                      </ul>
-                  </div>
-
-                  {/* Resources Column */}
-                  <div>
-                      <h3 className="text-sm  text-gray-400">Resources</h3>
-                      <ul className="mt-6 space-y-4">
-                          {navigation.Resources.map((item) => (
-                              <li key={item.name}>
-                                  <a href={item.href} className="text-sm text-gray-600 hover:text-gray-900">
-                                      {item.name}
-                                  </a>
-                              </li>
-                          ))}
-                      </ul>
-                  </div>
-
-                  {/* Support Column */}
-                  <div>
-                      <h3 className="text-sm  text-gray-400">Support</h3>
-                      <ul className="mt-6 space-y-4">
-                          {navigation.Support.map((item) => (
-                              <li key={item.name}>
-                                  <a href={item.href} className="text-sm text-gray-600 hover:text-gray-900">
-                                      {item.name}
-                                  </a>
-                              </li>
-                          ))}
-                      </ul>
-                  </div>
-              </div>
-
-              {/* Social Links */}
-              <div className="mt-8 flex justify-between border-t border-gray-200 pt-8">
-                  <p className="mt-8 text-lg font-semibold leading-5 text-black">Join our official channels.</p>
-
-                  <div className="flex space-x-6 mt-8 ">
-                      {navigation.social.map((item) => (
-                          <a key={item.name} href={item.href} className="text-gray-500 hover:text-gray-900">
-                              <span className="sr-only">{item.name}</span>
-                              <item.icon className="h-6 w-6" aria-hidden="true" />
-                          </a>
-                      ))}
-                  </div>
-                  {/* <p className="mt-8 text-xs leading-5 text-gray-500">&copy; 2024 Your Resources. All rights reserved.</p> */}
-              </div>
-              <div className="mt-12 flex justify-between border-t border-gray-200 pt-2">
-                  {/* <p className="mt-2 text-xs leading-5 text-gray-500">Join our official channels.</p> */}
-
-                  {/* <div className="flex space-x-6">
-                      {navigation.social.map((item) => (
-                          <a key={item.name} href={item.href} className="text-gray-500 hover:text-gray-900">
-                              <span className="sr-only">{item.name}</span>
-                              <item.icon className="h-6 w-6" aria-hidden="true" />
-                          </a>
-                      ))}
-                  </div> */}
-                  <p className="mt-8 text-xs leading-5 text-gray-500">&copy;2024 EduPath. All rights reserved.</p>
-              </div>
+      <div className="mx-auto max-w-7xl px-6 pb-8 pt-20 sm:pt-24 lg:px-8 lg:pt-32">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Categories Column */}
+          <div>
+            <h3 className="text-sm  text-gray-400">Categories</h3>
+            <ul className="mt-6 space-y-4">
+              {navigation.Categories.map((item) => (
+                <li key={item.name}>
+                  <a href={item.href} className="text-sm text-gray-600 hover:text-gray-900">
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
-      </footer>
+
+          {/* About Column */}
+          <div>
+            <h3 className="text-sm  text-gray-400">About</h3>
+            <ul className="mt-6 space-y-4">
+              {navigation.About.map((item) => (
+                <li key={item.name}>
+                  <a href={item.href} className="text-sm text-gray-600 hover:text-gray-900">
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Resources Column */}
+          <div>
+            <h3 className="text-sm  text-gray-400">Resources</h3>
+            <ul className="mt-6 space-y-4">
+              {navigation.Resources.map((item) => (
+                <li key={item.name}>
+                  <a href={item.href} className="text-sm text-gray-600 hover:text-gray-900">
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Support Column */}
+          <div>
+            <h3 className="text-sm  text-gray-400">Support</h3>
+            <ul className="mt-6 space-y-4">
+              {navigation.Support.map((item) => (
+                <li key={item.name}>
+                  <a href={item.href} className="text-sm text-gray-600 hover:text-gray-900">
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        {/* Social Links */}
+        <div className="mt-8 flex lg:justify-between border-t border-gray-200 pt-8 ">
+          <p className="mt-8 text-lg font-semibold leading-5 text-black">Join our official channels.</p>
+
+          <div className="flex space-x-6 mt-8 ">
+            {navigation.social.map((item) => (
+              <a key={item.name} href={item.href} className="text-gray-500 hover:text-gray-900">
+                <span className="sr-only">{item.name}</span>
+                <item.icon className="h-6 w-6" aria-hidden="true" />
+              </a>
+            ))}
+          </div>
+        </div>
+        <div className="mt-12 flex justify-between border-t border-gray-200 pt-2">
+       
+          <p className="mt-8 text-xs leading-5 text-gray-500">&copy;2024 EduPath. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   )
 }

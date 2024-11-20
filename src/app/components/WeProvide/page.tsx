@@ -15,7 +15,7 @@ const page = () => {
         <div className="pt-20 flex flex-col-reverse lg:flex-row justify-between items-center max-w-[1100px] mx-auto space-y-10 lg:space-y-0 lg:space-x-10">
             {/* Left Section */}
             <div className='left w-full lg:w-[424px] lg:h-[546px] space-y-6 text-center lg:text-left'>
-                <h1 className="text-3xl lg:text-5xl font-semibold">We provide...</h1>
+                <h1 className="text-3xl lg:text-5xl font-semibold mt-8">We provide...</h1>
                 <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-1">
                         <AccordionTrigger>Personalized routine</AccordionTrigger>

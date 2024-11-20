@@ -16,7 +16,9 @@ import instructor3 from "../../assets/instructor3.jpg"
 import instructor4 from "../../assets/instructor4.jpg"
 import clock from "../../assets/clock.png"
 import book from "../../assets/book.png"
-const page = () => {
+import mark from "../../assets/provideicon (2).png"
+
+const Page = () => {
     const sliderRef = React.useRef<HTMLDivElement>(null)
     const [currentSlide, setCurrentSlide] = React.useState(0)
 
@@ -115,9 +117,10 @@ const page = () => {
                 image: instructor4
             },
             price: 55,
-            image:course1
+            image: course1
         }
     ]
+
     const slideLeft = () => {
         if (sliderRef.current) {
             const scrollAmount = sliderRef.current.offsetWidth
@@ -133,6 +136,7 @@ const page = () => {
             setCurrentSlide(prev => Math.min(prev + 1, courses.length - 1))
         }
     }
+
     return (
         <div className="px-4 py-6 max-w-[1100px] mx-auto mt-4 sm:mt-20">
             <div className="flex items-center justify-between mb-6">
@@ -182,15 +186,15 @@ const page = () => {
                                 <Badge variant="secondary border" className='border-[#ffdfb1] bg-[#fff5e6]' >{course.level}</Badge>
                                 <Badge variant="secondary border" className='border-[#e4f191] bg-[#f5fad6]'>{course.category}</Badge>
                             </div>
-                            <h3 className="font-semibold mb-2 line-clamp-2">{course.title}</h3>
+                            <h3 className={`font-semibold mb-2 line-clamp-2 ${course.id === 2 ? 'underline' : ''}`}>{course.title}</h3>
                             <div className="flex items-center gap-1 mb-4">
                                 <div className="flex">
                                     {[...Array(5)].map((_, i) => (
                                         <Star
                                             key={i}
                                             className={`h-4 w-4 ${i < Math.floor(course.rating)
-                                                    ? "text-yellow-400 fill-yellow-400"
-                                                    : "text-gray-300"
+                                                ? "text-yellow-400 fill-yellow-400"
+                                                : "text-gray-300"
                                                 }`}
                                         />
                                     ))}
@@ -205,10 +209,8 @@ const page = () => {
                                     <span>{course.duration}</span>
                                 </div>
                                 <div className="border-l border-gray-400 h-3 mx-2" />
-
                                 <div className="flex items-center gap-1 ">
-                                    <Image src={book} alt={course.title}className=" object-cover h-4 w-4" />
-
+                                    <Image src={book} alt={course.title} className=" object-cover h-4 w-4" />
                                     <span className='mb-1'>{course.lessons} Lessons</span>
                                 </div>
                             </div>
@@ -223,7 +225,14 @@ const page = () => {
                                     />
                                     <span className="text-sm font-medium">{course.instructor.name}</span>
                                 </div>
-                                <span className="font-semibold text-2xl">${course.price}</span>
+                                {course.id === 3 ? (
+                                    <div className='flex border-gray border rounded items-center p-1'>
+                                        <Image src={mark} alt='marked as enrolled ' className='w-3 h-3' />
+                                        <p className="  text-gray-400 text-xs">Enrolled</p>
+                                    </div>
+                                ) : (
+                                    <span className="font-semibold text-2xl">${course.price}</span>
+                                )}
                             </div>
                         </div>
                     </Card>
@@ -233,4 +242,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

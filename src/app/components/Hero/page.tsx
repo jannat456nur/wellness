@@ -9,10 +9,10 @@ import heroicon from '../../assets/heroicon.png';
 const page = () => {
     return (
         <div className="bg-[#F0F1EE] ">
-            <div className="sm:mt-8 sm:gap-4 max-w-[1100px] mx-auto h-auto lg:h-[760px] flex flex-col lg:flex-row justify-between items-center">
+            <div className="sm:mt-8  sm:gap-4 max-w-[1100px] mx-auto h-auto lg:h-[760px] flex flex-col lg:flex-row justify-between items-center">
                 {/* Left Section */}
                 <div className="left space-y-4 md:space-y-6 lg:space-y-8 text-center lg:text-left px-4 lg:px-0">
-                    <div className="flex justify-center lg:justify-start items-center gap-2">
+                    <div className=" flex justify-center lg:justify-start items-center gap-2">
                         {/* Full Stars */}
                         {[...Array(4)].map((_, index) => (
                             <svg
@@ -62,7 +62,7 @@ const page = () => {
                 >
                     <div className="w-full h-auto lg:h-[280px] relative px-4 lg:px-0">
                         {/* First Div with Glass-like Background Blur */}
-                        <div className="bg-slate-200 bg-opacity-30 backdrop-blur-lg py-6 px-6 lg:py-10 lg:px-8 z-10 flex flex-col lg:flex-row justify-around items-center rounded-lg">
+                        <div className=" hidden lg:flex  bg-slate-200 bg-opacity-30 backdrop-blur-lg py-6 px-6 m-2 lg:py-10 lg:px-8 z-10 flex flex-col lg:flex-row justify-around items-center rounded-lg">
                             <h1 className="text-4xl lg:text-6xl font-bold">12,000+</h1>
                             {/* Vertical Divider */}
                             <div className="hidden lg:block border-l border-black h-8 mx-2" />
@@ -72,7 +72,7 @@ const page = () => {
                         </div>
 
                         {/* Second Div with Blur effect */}
-                        <div className="absolute left-0 right-0 mb-2 mx-2 -mt-4 z-20 py-6 px-6 lg:py-10 lg:px-8 bg-white rounded-lg shadow-lg flex flex-col lg:flex-row justify-between items-center">
+                        <div className=" hidden lg:flex absolute left-0 right-0 -mt-5 mx-2  z-20 py-6 px-6 lg:py-10 lg:px-8 bg-white rounded-lg shadow-lg flex flex-col lg:flex-row justify-between items-center">
                             <p className="text-sm md:text-base lg:text-lg font-medium">
                                 Find your wellbeing
                             </p>
@@ -83,7 +83,9 @@ const page = () => {
                         </div>
                         <Image
                             src={heroicon}
-                            className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 absolute -top-8 sm:-top-80 md:-top-16 lg:-top-80 sm:top-30 -left-4 lg:-left-8"
+                            // className="h-16 w-16 md:h-20 md:w-20 lg:h-24 lg:w-24 absolute -top-8 sm:-top-0 md:-top-0 lg:-top-80 sm:top-30 -left-4 lg:-left-8"
+                            className="absolute -top-52 lg:-top-80 -left-6 lg:-left-10 w-16 lg:w-[70px] h-16 lg:h-[73.67px]"
+
                             alt="Hero Icon"
                         />
                     </div>
