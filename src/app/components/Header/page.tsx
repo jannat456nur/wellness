@@ -6,15 +6,17 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "../../assets/Logo.png";
 
+type DropdownKey = "courses" | "instructors" | "blogs";
+
 export default function Menu() {
-    const [dropdownOpen, setDropdownOpen] = useState({
+    const [dropdownOpen, setDropdownOpen] = useState<Record<DropdownKey, boolean>>({
         courses: false,
         instructors: false,
         blogs: false,
     });
     const [sidebarOpen, setSidebarOpen] = useState(false); // State to control the sidebar visibility
 
-    const toggleDropdown = (menu: string) => {
+    const toggleDropdown = (menu: DropdownKey) => {
         setDropdownOpen((prev) => ({
             ...prev,
             [menu]: !prev[menu],
